@@ -80,6 +80,8 @@ for line in lines[offset:]:
             records.append(Record(*s))
         except ValueError:
             print(f"ВНИМАНИЕ: Данные строки в неверном формате, пропуск; Строка: {line}")
+    else:
+        print(f"ВНИМАНИЕ: Данные строки в неверном формате, пропуск; Строка: {line}")
 
 records = Records(records)
 
